@@ -1,9 +1,19 @@
-var count = 1;
-var countlinear = 1;
+let binaryCount = 1;
+let linearCount = 1;
+
+let valueInput;
+
+const form = document.querySelector('.form');
+const input = document.querySelector('.form__input');
+
+const resultsBlock = document.querySelector('.results');
+
+const binaryValue = document.querySelector('.result__value_type_binary');
+const linearValue = document.querySelector('.result__value_type_linear');
 
 function binarySearch(value, list) {
-  let first = 0;    //left endpoint
-  let last = list.length - 1;   //right endpoint
+  let first = 0;
+  let last = list.length - 1;
   let position = -1;
   let found = false;
   let middle;
@@ -12,12 +22,13 @@ function binarySearch(value, list) {
       if (list[middle] == value) {
           found = true;
           position = middle;
-          count++;
-      } else if (list[middle] > value) {  //if in lower half
+
+      } else if (list[middle] > value) {
           last = middle - 1;
-      } else {  //in in upper half
+          binaryCount++;
+      } else {
           first = middle + 1;
-          count++;
+          binaryCount++;
       }
   }
   return position;
@@ -34,48 +45,36 @@ function linearSearch(value, list) {
           position = index;
       } else {
           index += 1;
-          countlinear++
+          linearCount++
       }
   }
   return position;
 }
 
-let linearValue = document.querySelector('.linear_value')
-
-const form = document.querySelector('.form')
-const input = document.querySelector('.form__input')
-// let linearresult = linearSearch(80, array)
-// let result = binarySearch(48967, array)
-// console.log(result);
-
-
-
-
-let valueInput
-
 function updateArgument () {
-  //evt.preventDefault();
-
-
-  // Получите значение полей из свойства value
- valueInput = input.value;
-//  console.log(valueInput)
-  // Выберите элементы, куда должны быть вставлены значения полей
-  // Вставьте новые значения с помощью textContent
+  valueInput = input.value;
   return valueInput
 }
 
-// Прикрепляем обработчик к форме:
-// он будет следить за событием “submit” - «отправка»
-form.addEventListener('submit', evt =>{
+function showResults(){
+  resultsBlock.classList.add('results_opened');
+}
 
+form.addEventListener('submit', evt =>{
   evt.preventDefault();
+  showResults()
+
+  binaryCount = 1;
+  linearCount = 1;
+
   updateArgument()
-  console.log(valueInput)
-  let linearresult = linearSearch(valueInput, array)
-  let result = binarySearch(valueInput, array)
-  console.log(count);
-  console.log(countlinear);
+
+  linearSearch(valueInput, array)
+  binarySearch(valueInput, array)
+
+  binaryValue.textContent = binaryCount;
+  linearValue.textContent = linearCount;
+
   form.reset()
 });
 

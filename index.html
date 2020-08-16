@@ -10,9 +10,11 @@
   <div class="page">
     <main class="main-container">
       <h1 class="title">Привет 👋</h1>
+      <p class="about">Знаешь игру угадай мелодию? Там круче тот, кто угадает мелодию с 1 ноты.</p>
+      <p class="about">Тут тоже чем меньше нот (или попыток), тем круче! Только соревнуются алгоритмы.</p>
       <p class="paragraph">Загадай число от&nbsp;1&nbsp;до&nbsp;10&nbsp;000</p>
       <form class="form" id="form" name="form" method="POST" action="#">
-        <input class="form__input" type="number" placeholder="вот сюда вводи целое число, без дробей пожалуйста))0)) а то всё поломается))">
+        <input class="form__input" type="number" min="1" max="10000" placeholder="вот сюда вводи целое число, без дробей пожалуйста))0)) а то всё поломается))" required>
         <button class="form__button" type="submit">☑️🚀</button>
       </form>
       <p class="linear_value"></p>
@@ -22,23 +24,17 @@
           <div class="result__description-container">
             <p class="result__paragrph">про логарифмы слыхал&nbsp;сынок да мне и для миллиона итераций нужно меньше чем тебе полных лет</p>
             <p class="result__description">у меня все ходы записаны и их всего</p>
-            <p class="result__value result__value_type_binary">3</p>
+            <p class="result__value result__value_type_binary"></p>
           </div>
         </div>
         <div class="result result_linear">
           <h2 class="result__title">линейный поиск</h2>
           <div class="result__description-container">
-            <p class="result__paragrph">чо так сложмно(( это же все по одной перебрать надо не пиши пажалста циферки больше 5</p>
+            <p class="result__paragrph">чо так сложмно(( это же все по одной перебрать надо не пиши пажалста циферки больше 14</p>
             <p class="result__description">мне нужмно столько итераций</p>
             <p class="result__value result__value_type_linear">878</p>
           </div>
         </div>
-        <!-- <div class="results__linear">
-          <h2 class="results__title">линейный
-            поиск</h2>
-          <p class="results__value">я угадаю его за....</p>
-
-        </div> -->
       </div>
     </main>
   </div>

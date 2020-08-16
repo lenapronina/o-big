@@ -1,0 +1,9 @@
+.about {
+  margin: 0 0 10px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.about:nth-child(3) {
+  margin: 0 0 30px;
+}
