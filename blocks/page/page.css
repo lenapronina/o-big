@@ -1,0 +1,10 @@
+.page {
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(152.67% 142.88% at 0% 34.57%, #0A8CC2 2.53%, #ED8729 35.79%, #DB3671 53.74%, #A3079C 83.21%);;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #FFFFFF;
+}

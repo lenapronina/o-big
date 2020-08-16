@@ -1,0 +1,13 @@
+.result__description {
+  margin: 90px 0 0;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+
+@media (max-width: 500px){
+  .result__description {
+    margin: 40px 0 0;
+  }
+}

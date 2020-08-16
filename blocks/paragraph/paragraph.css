@@ -1,0 +1,14 @@
+.paragraph {
+  margin: 0 0 10px 0;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+@media (max-width: 500px){
+  .paragraph {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}

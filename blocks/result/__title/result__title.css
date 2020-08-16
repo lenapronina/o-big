@@ -1,0 +1,14 @@
+.result__title {
+  margin: 0;
+  max-width: 89px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media (max-width: 500px){
+  .result__title {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

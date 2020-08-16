@@ -1,0 +1,13 @@
+.title {
+  margin: 0 0 46px 0;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+@media (max-width: 500px){
+  .title {
+    font-size: 18px;
+  line-height: 20px;
+  }
+}

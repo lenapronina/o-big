@@ -1,0 +1,17 @@
+.form__button {
+  background-color: #ffffff;
+  border: 5px solid #FFFFFF;
+  transition: all 0.3s ease-in;
+}
+
+.form__button:hover {
+  background-color: rgba(233, 179, 179, 0);
+}
+
+@media (max-width: 500px){
+  .form__button {
+    height: 35px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+}

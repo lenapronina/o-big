@@ -1,0 +1,17 @@
+.result {
+
+  max-width: 500px;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+@media (max-width: 500px){
+  .result {
+    width: 250px;
+    min-height: 150px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}

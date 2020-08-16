@@ -1,0 +1,17 @@
+.result__paragrph {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+
+@media (max-width: 500px){
+  .result__paragrph {
+    max-width: 197px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+

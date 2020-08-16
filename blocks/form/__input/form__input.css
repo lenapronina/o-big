@@ -1,0 +1,26 @@
+.form__input{
+  height: 50px;
+  border: 5px solid #FFFFFF;
+  border-right: none;
+  box-sizing: border-box;
+  padding-left: 15px;
+  background-color: rgba(0,0,0,0);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.form__input::placeholder{
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+@media (max-width: 500px){
+  .form__input {
+    height: 35px;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+}

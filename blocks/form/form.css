@@ -1,0 +1,12 @@
+.form {
+  width: 100%;
+  margin: 36px auto 63px;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+}
+
+@media (max-width: 500px){
+  .form {
+    grid-template-columns: 2fr 1fr;
+  }
+}
