@@ -2,6 +2,7 @@
   background-color: #ffffff;
   border: 5px solid #FFFFFF;
   transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 
 .form__button:hover {
